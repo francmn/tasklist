@@ -3,6 +3,7 @@ import Input from '../Input'
 import Button from '../Button'
 import { useState } from "react"
 import { v4 as uuidv4 } from 'uuid'
+import { AiOutlineCheck } from "react-icons/ai";
 
 export const TaskForm = (props) => {
 
@@ -25,10 +26,12 @@ export const TaskForm = (props) => {
     }
     
     return (
-      <form className='task-form'
+      <form className={styles.taskForm}
             onSubmit={handleSend}>
-        <Input handleChange={handleChange}></Input>
-        <Button>Agregar tarea</Button>
+        <Input 
+                className={styles.inputContainer}
+                handleChange={handleChange}></Input>
+        <Button><AiOutlineCheck /></Button>
       </form>
     )
   }

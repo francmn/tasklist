@@ -1,8 +1,9 @@
 import styles from './styles.module.scss'
-import TaskForm from "../TaskForm"
-import Header from '../Header'
+import TaskForm from '../TaskForm/index.jsx'
+import Header from '../Header/index.jsx'
 import { useState } from 'react'
-import Task from "../Task/Task";
+import Task from "../Task/Task.jsx"
+import Divider from '../Divider/index.jsx'
 
 function TasksList(){
 
@@ -34,10 +35,12 @@ function TasksList(){
         //console.log("Tarea Agregada")
         //console.log(task)
     return(
-        <>
-            <Header/>
+        
+        <div className={styles.taskApp}> 
+            <Header className={styles.headerContainer}/>
             <TaskForm onSubmit={addTask} />
-            <div className="task-list-container">
+            <Divider></Divider>
+            <div className={styles.taskListContainer}>
                 {
                     tasks.map((task) => 
                     <Task
@@ -50,7 +53,7 @@ function TasksList(){
                     )
                 }
             </div>
-        </>
+        </div>
     )
 }
 

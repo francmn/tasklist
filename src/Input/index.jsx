@@ -1,16 +1,15 @@
-//import  "../styles.module.scss"
-import TaskForm from "../TaskForm"
+import styles from './styles.module.scss'
+//import TaskForm from '.index.jsx'
 
 export const Input = ({handleChange}) => {
     return (
-      <input 
+      <input
         type="text"
-        placeholder="Escribe una tarea" 
-        className="task-input"
+       // placeholder="Escribe una tarea" 
+        className={styles.taskInput}
         name="texto"
         onChange={handleChange}
       />
-      
     )
   }
 

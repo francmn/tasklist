@@ -1,9 +1,15 @@
 import styles from './styles.module.scss'
 
 
-export const Checkbox = () => {
+export const Checkbox = (props) => {
+
+
+
     return (
-      <input type="checkbox"/>
+      <input type="checkbox"
+      checked={props.status} onChange={()=> props.handleChange()}
+      />
+
     )
   }
 

@@ -1,0 +1,30 @@
+$colorB1:rgba(255,255,255,1);
+$colorN1:rgba(34,34,34,1);
+
+.taskListContainer{
+
+    box-sizing: border-box;
+    background-color: $colorB1;
+    color:$colorN1;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 4px;
+    gap: 4px;
+
+
+
+}
+
+.taskApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 4px;
+
+}

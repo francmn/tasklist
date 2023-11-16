@@ -1,3 +1,33 @@
+//$backgroundColor: rgb(70, 69, 69);
+
 .tachado{
      text-decoration: line-through;
+}
+
+.taskContainer{
+     background-color: rgba(34,34,34,0.5);
+     width: 512px;
+     min-height: 64px; 
+     margin: 4px;
+     padding: 4px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 4px;
+}
+
+.taskText{
+
+     font-family: Roboto, sans-serif;
+     font-size: 24px;
+     padding: 16px;
+     justify-content: left;
+     overflow-wrap: anywhere; // si el texto de la tarea es muy largo se corta y sigue hacia bajo
+}
+
+.taskButton{
+     
+     display: flex;
+     justify-content: space-between;
+     
 }
